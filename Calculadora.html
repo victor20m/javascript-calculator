@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora v1.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div id="nombre">
+            <p>Victor M.</p>
+        </div>
+        <div id="display">
+            <p>0</p>
+        </div>
+
+        <button class="btn btn-clear" onclick="clearBtn()"><b>C</b></button>
+        <button class="btn raiz" onclick="raizCuadrada()"><b>√</b></button>
+        <button class="btn btn-borrar" onclick="borrar()"><b><-</b></button>
+        <button class="btn btn-division" onclick="operacion('/')"><b>/</b></button>
+
+        <button class="btn btn-numero" onclick="numBtn(7)"><b>7</b></button>
+        <button class="btn btn-numero" onclick="numBtn(8)"><b>8</b></button>
+        <button class="btn btn-numero" onclick="numBtn(9)"><b>9</b></button>
+        <button class="btn btn-multiplicacion" onclick="operacion('*')"><b>X</b></button>
+
+        <button class="btn btn-numero" onclick="numBtn(4)"><b>4</b></button>
+        <button class="btn btn-numero" onclick="numBtn(5)"><b>5</b></button>
+        <button class="btn btn-numero" onclick="numBtn(6)"><b>6</b></button>
+        <button class="btn btn-resta" onclick="operacion('-')"><b>-</b></button>
+
+        <button class="btn btn-numero" onclick="numBtn(1)"><b>1</b></button>
+        <button class="btn btn-numero" onclick="numBtn(2)"><b>2</b></button>
+        <button class="btn btn-numero" onclick="numBtn(3)"><b>3</b></button>
+        <button class="btn btn-suma" onclick="operacion('+')"><b>+</b></button>
+
+        <button class="btn btn-signo" onclick="cambioSigno()"><b>+/-</b></button>
+        <button class="btn btn-numero" onclick="numBtn(0)"><b>0</b></button>
+        <button class="btn btn-coma" onclick="numBtn('.')"><b>.</b></button>
+        <button class="btn btn-resultado" onclick="resultadoBtn()"><b>=</b></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
